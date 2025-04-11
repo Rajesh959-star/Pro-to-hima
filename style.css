@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  animation: fadeIn 2s ease-in;
+}
+
+#proposalMessage {
+  font-size: 2em;
+  color: red;
+  margin-top: 20px;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
