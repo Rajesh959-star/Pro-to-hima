@@ -62,3 +62,28 @@ body {
     width: 95%;
   }
 }
+.next-icon {
+  display: inline-block;
+  font-size: 40px;
+  color: #ff6699;
+  text-decoration: none;
+  margin-top: 40px;
+  animation: bounce 2s infinite;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.next-icon:hover {
+  transform: scale(1.2);
+  color: #ff3366;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
