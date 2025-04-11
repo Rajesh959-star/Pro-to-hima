@@ -24,3 +24,41 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+.timeline {
+  position: relative;
+  margin: 60px auto;
+  padding: 20px 0;
+  width: 80%;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-content {
+  background: #ffe6f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    width: 95%;
+  }
+}
